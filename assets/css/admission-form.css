@@ -1,0 +1,32 @@
+.admission-header {
+    background: rgba(0, 0, 0, 0) url("../img/header4.jpg") repeat fixed center bottom / cover ;
+    color: #fff;
+    overflow: hidden;
+    padding: 300px 0 150px;
+    position: relative;
+    transition: all 0.35s ease 0s;
+	margin-bottom:100px;
+}
+.admission-header::before {
+    background:rgba(0, 0, 0, 0.73) none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+#carrier{
+    height: 100%;
+    width: 100%;
+}
+.admission-header h1 {
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.admission-header h3 {
+    position: relative;
+    text-align: center;
+    width: 100%;
+}

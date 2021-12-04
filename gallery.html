@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<!--
+	Be by TEMPLATE STOCK
+	templatestock.co @templatestock
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+	<link rel="manifest" href="assets/favicon/site.webmanifest">
+	<link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+    <title>Gallery | Cosmo School</title>		 
+    <link rel="stylesheet" href="assets/css/pro-bars.css">
+    <!-- =============== Bootstrap Core CSS =============== -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
+    <!-- =============== fonts awesome =============== -->
+    <link rel="stylesheet" href="assets/font/css/font-awesome.min.css" type="text/css">
+    <!-- =============== Plugin CSS =============== -->
+    <link rel="stylesheet" href="assets/css/animate.min.css" type="text/css">
+    <!-- =============== Custom CSS =============== -->
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <!-- =============== Owl Carousel Assets =============== -->
+    <link href="assets/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="assets/owl-carousel/owl.theme.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/admission-form.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif+Bengali:wght@300&family=Philosopher:ital@1&display=swap" rel="stylesheet">	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" >
+
+	 <link rel="stylesheet" href="assets/css/isotope-docs.css" media="screen">
+	  <link rel="stylesheet" href="assets/css/baguetteBox.css">
+	  <script src="assets/js/navbar.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" >
+
+
+    <style>
+        .details{
+            background-color: #f4f5f8;
+        }
+        .fg-theme{
+            cursor: pointer;
+        }
+        .fg-theme:hover{
+            color: #ff0000;
+            font-size: 28px;
+        }
+        .admission-header{
+      background: url("assets/img/parade.jpg") no-repeat fixed center bottom / cover;
+    }
+    </style>
+
+</head>
+
+<body>
+    <!-- =============== Preloader =============== -->
+    <div id="preloader">
+          <div id="loading">
+		<img width="256" height="32" src="assets/img/loading-cylon-red.svg">
+        </div>
+    </div>
+    <!-- =============== nav =============== -->
+    <section id="navbar">
+      <a href="https://www.cosmoschools.org"><img  style=" position: absolute; ; z-index: 2; " src="assets/img/cslogo.png" alt="" srcset=""></a>
+      <nav class="navigation ">
+         <ul>
+         <li>
+           <a href="#">
+           <span class="nav-title" onclick="window.open('index.html','_self')">Home</span>
+           </a>
+         </li>
+         <li>
+           <a href="#">
+           <span class="nav-title" onclick="window.open('offline-activities.html','_self')">Offline Activities</span>
+           </a>
+         </li>
+          <li>
+           <span class="nav-title" onclick="show1()">Admission &nbsp <i class="fas fa-angle-right rotate1"></i></span>
+             <span class="sub-menu">
+             <li class="sub-title hide1" onclick="window.open('admission-form.html','_self')">Form</li>
+             <li class="sub-title hide1" onclick="window.open('escort-card.html','_self')">Escort Card</li>
+             <li class="sub-title hide1" onclick="window.open('brochure.html','_self')">Brochure</li>
+             </span>
+         </li>
+         <li>
+           <span class="nav-title"  onclick="show2()">About &nbsp <i class="fas fa-angle-right rotate2"></i></span>
+           <span class="sub-menu">
+             <li class="sub-title hide2" onclick="window.open('index.html#about','_self')">About Us</li>
+             <li class="sub-title hide2" onclick="window.open('mission-vision.html','_self')">Mission and Vision</li>
+             <li class="sub-title hide2" onclick="window.open('student-prottoyon.html','_self')">Student Prottoyon</li>
+             <li class="sub-title hide2" onclick="window.open('student-guideline.html','_self')">Student Guideline</li>
+           </span>
+         </li>
+         <li>
+           <span class="nav-title"onclick="show3()" >Academic &nbsp <i class="fas fa-angle-right rotate3"></i> </span>
+           <span class="sub-menu">
+             <li class="sub-title hide3" onclick="window.open('calendar.html','_self')">Calendar</li>
+             <li class="sub-title hide3" onclick="window.open('class-routine.html','_self')">Class Routine</li>
+             <li class="sub-title hide3" onclick="window.open('exam-routine.html','_self')">Exam Routine</li>
+             <li class="sub-title hide3" onclick="window.open('syllabus.html','_self')">Syllabus (All Classes)</li>
+             <li class="sub-title hide3" onclick="window.open('book-stationary.html','_self')">Book-Stationary List</li>
+             <li class="sub-title hide3" onclick="window.open('exam.html','_self')">Public Exam Result</li>
+           </span>
+         </li>
+         <li>
+           <a href="#">
+          <span class="nav-title" onclick="window.open('notice.html','_self')">Notice</span>
+           </a>
+         </li>
+          <li>
+           <a href="#">
+           <span class="nav-title" onclick="window.open('gallery.html','_self')">Gallery</span>
+           </a>
+         </li>
+           <li>
+           <a href="#">
+           <span class="nav-title" onclick="window.open('index.html#contact','_self')">Contact us</span>
+           </a>
+         </li>
+         </ul>
+       </nav>
+       <div class="toggle"  onclick="toggleMenu()">
+         <b class="change"><i class="fas fa-bars "></i></b>
+       </div>
+       <div class="menu" onclick="toggleMenu()">Menu</div>
+      </section>
+    <!-- =============== header =============== -->
+    <header id="home" class="admission-header" style="
+    margin-bottom: 0px;
+">
+		<!-- =============== container =============== -->
+        <div class="container">
+            <div class="header-content row">
+				<h1>Image  Gallery of Cosmo School</h1>
+                <h3>Relive some our amazing momemts</h3>
+
+			</div>
+        </div>
+		<!-- =============== container end =============== -->
+    </header>
+    <!-- =============== blog single =============== -->
+
+<!-- =============== Gallery =============== -->
+<section id="Gallery" class="wow fadeInRight animated" data-wow-delay=".5s">
+	<div class="title">
+				<h2>Gallery</h2>				
+				<p>relive some of our amazing moments</p>
+				</div>
+			
+	<div class="big-demo go-wide" data-js-module="filtering-demo">
+
+    <div class="grid baguetteBoxThree gallery">
+
+       <div class="element-item transition cms " data-category="post-transition">
+        <a href="assets/img/gallery/emp-27.jpg">	 
+         <img src="assets/img/gallery/emp-27.jpg"/>       
+       <div class="hover-img"> 
+       <h2>Chairman</h2>
+       <i class="fa fa-camera camera"></i>
+       </div>	
+       </a>
+         </div>
+    <div class="element-item transition cms " data-category="post-transition">
+      <a href="assets/img/gallery/emp-25.jpg">	 
+       <img src="assets/img/gallery/emp-25.jpg"/>       
+     <div class="hover-img"> 
+     <h2>Principal</h2>
+     <i class="fa fa-camera camera"></i>
+     </div>	
+     </a>
+       </div>
+       <div class="element-item transition cms " data-category="post-transition">
+        <a href="assets/img/gallery/emp-24.jpg">	 
+         <img src="assets/img/gallery/emp-24.jpg"/>       
+       <div class="hover-img"> 
+       <h2>Vice Principal</h2>
+       <i class="fa fa-camera camera"></i>
+       </div>	
+       </a>
+         </div>
+         <div class="element-item transition cms " data-category="post-transition">
+          <a href="assets/img/gallery/emp-29.jpg">	 
+           <img src="assets/img/gallery/emp-29.jpg"/>       
+         <div class="hover-img"> 
+         <h2>Senior Teacher</h2>
+         <i class="fa fa-camera camera"></i>
+         </div>	
+         </a>
+           </div>
+           <div class="element-item transition cms " data-category="post-transition">
+            <a href="assets/img/gallery/emp-26.jpg">	 
+             <img src="assets/img/gallery/emp-26.jpg"/>       
+           <div class="hover-img"> 
+           <h2>Drawings -Annual Sports</h2>
+           <i class="fa fa-camera camera"></i>
+           </div>	
+           </a>
+             </div>
+            
+           
+     
+                 <div class="element-item transition cms " data-category="post-transition">
+                  <a href="assets/img/gallery/emp-30.jpg">	 
+                   <img src="assets/img/gallery/emp-30.jpg"/>       
+                 <div class="hover-img"> 
+                 <h2>Class Activity</h2>
+                 <i class="fa fa-camera camera"></i>
+                 </div>	
+                 </a>
+                   </div>
+                   <div class="element-item transition cms " data-category="post-transition">
+                    <a href="assets/img/gallery/emp-31.jpg">	 
+                     <img src="assets/img/gallery/emp-31.jpg"/>       
+                   <div class="hover-img"> 
+                   <h2>Yoga session</h2>
+                   <i class="fa fa-camera camera"></i>
+                   </div>	
+                   </a>
+                     </div>
+      <div class="element-item transition webdesign " data-category="post-transition">
+	  <a href="assets/img/gallery/emp-1.jpg">	 
+	  <img src="assets/img/gallery/emp-1.jpg"/>      
+		<div class="hover-img"> 
+		<h2>21<sup>st</sup> February</h2>
+		<i class="fa fa-camera camera"></i>
+		</div>
+	  </a>
+      </div>      
+      <div class="element-item post-transition ecommerce " data-category="post-transition">
+	  <a href="assets/img/gallery/emp-2.jpg">	 
+        <img src="assets/img/gallery/emp-2.jpg"/>    
+		<div class="hover-img"> 
+		<h2>16<sup>th</sup> December</h2>
+		<i class="fa fa-camera camera"></i>
+		</div>		
+	  </a>
+      </div>
+      <div class="element-item post-transition webdesign " data-category="post-transition">
+	  <a href="assets/img/gallery/emp-3.jpg">	 
+		<img src="assets/img/gallery/emp-3.jpg"/>       
+		<div class="hover-img"> 
+		<h2>Science Museum</h2>
+		<i class="fa fa-camera camera"></i>
+		</div>		
+		</a>
+      </div>
+	 <div class="element-item transition ecommerce " data-category="post-transition">
+	   <a href="assets/img/gallery/emp-4.jpg">	 
+	    <img src="assets/img/gallery/emp-4.jpg"/>       
+		<div class="hover-img"> 
+		<h2>Pohela Boishakh</h2>
+		<i class="fa fa-camera camera"></i>
+		</div>	
+		</a>		
+      </div>      
+      <div class="element-item post-transition logo " data-category="post-transition">
+         <a href="assets/img/gallery/emp-5.jpg">	 
+	    <img src="assets/img/gallery/emp-5.jpg"/>       
+		<div class="hover-img"> 
+		<h2>Pitha Utshob</h2>
+		<i class="fa fa-camera camera"></i>
+		</div>	
+		</a>
+      </div>
+      <div class="element-item post-transition cms " data-category="post-transition">
+		 <a href="assets/img/gallery/emp-6.jpg">	 
+	    <img src="assets/img/gallery/emp-6.jpg"/>       
+		<div class="hover-img"> 
+		<h2>Teachers- Annual Sports</h2>
+		<i class="fa fa-camera camera"></i>
+		</div>	
+		</a>
+      </div>
+      <div class="element-item post-transition cms " data-category="post-transition">
+        <a href="assets/img/gallery/emp-36.jpg">	 
+         <img src="assets/img/gallery/emp-36.jpg"/>       
+       <div class="hover-img"> 
+       <h2>SCC Batch- 2021</h2>
+       <i class="fa fa-camera camera"></i>
+       </div>	
+       </a>
+         </div>
+	  <div class="element-item post-transition logo " data-category="post-transition">
+         <a href="assets/img/gallery/emp-7.jpg">	 
+	    <img src="assets/img/gallery/emp-7.jpg"/>       
+		<div class="hover-img"> 
+		<h2>SCC Batch- 2019</h2>
+		<i class="fa fa-camera camera"></i>
+		</div>	
+		</a>
+      </div>
+	  <div class="element-item transition cms " data-category="post-transition">
+	   <a href="assets/img/gallery/emp-8.jpg">	 
+	    <img src="assets/img/gallery/emp-8.jpg"/>       
+		<div class="hover-img"> 
+		<h2>Dress as you like</h2>
+		<i class="fa fa-camera camera"></i>
+		</div>	
+		</a>
+      </div>      
+      <div class="element-item post-transition ecommerce " data-category="post-transition">
+         <a href="assets/img/gallery/emp-9.jpg">	 
+	    <img src="assets/img/gallery/emp-9.jpg"/>       
+		<div class="hover-img"> 
+		<h2>Brikkho Mela</h2>
+		<i class="fa fa-camera camera"></i>
+		</div>	
+		</a>
+      </div>
+      <div class="element-item post-transition webdesign " data-category="post-transition">
+		 <a href="assets/img/gallery/emp-10.jpg">	 
+	    <img src="assets/img/gallery/emp-10.jpg"/>       
+		<div class="hover-img"> 
+		<h2>Class:10- Annual Sports</h2>
+		<i class="fa fa-camera camera"></i>
+		</div>	
+		</a>          
+      </div>
+	  <div class="element-item post-transition logo " data-category="post-transition">
+         <a href="assets/img/gallery/emp-11.jpg">	 
+	    <img src="assets/img/gallery/emp-11.jpg"/>       
+		<div class="hover-img"> 
+		<h2>15<sup>th</sup>August 2021 - Drawing festival</h2>
+		<i class="fa fa-camera camera"></i>
+		</div>	
+		</a>
+      </div>
+	  <div class="element-item transition cms " data-category="post-transition">
+	   <a href="assets/img/gallery/emp-12.jpg">	 
+	    <img src="assets/img/gallery/emp-12.jpg"/>       
+		<div class="hover-img"> 
+		<h2>Class:9- Book Fair</h2>
+		<i class="fa fa-camera camera"></i>
+		</div>	
+		</a>
+      </div>
+	  <div class="element-item transition cms " data-category="post-transition">
+	   <a href="assets/img/gallery/emp-13.jpg">	 
+	    <img src="assets/img/gallery/emp-13.jpg"/>       
+		<div class="hover-img"> 
+		<h2>Class:8- Book Fair</h2>
+		<i class="fa fa-camera camera"></i>
+		</div>	
+		</a>
+      </div>   
+	  <div class="element-item transition cms " data-category="post-transition">
+	   <a href="assets/img/gallery/emp-14.jpg">	 
+	    <img src="assets/img/gallery/emp-14.jpg"/>       
+		<div class="hover-img"> 
+		<h2>Banasree Campus</h2>
+		<i class="fa fa-camera camera"></i>
+		</div>	
+		</a>
+      </div>   
+	  <div class="element-item transition cms " data-category="post-transition">
+	   <a href="assets/img/gallery/emp-15.jpg">	 
+	    <img src="assets/img/gallery/emp-15.jpg"/>       
+		<div class="hover-img"> 
+		<h2>Class:10 Boys</h2>
+		<i class="fa fa-camera camera"></i>
+		</div>	
+		</a>
+      </div>   
+	  <div class="element-item transition cms " data-category="post-transition">
+	   <a href="assets/img/gallery/emp-16.jpg">	 
+	    <img src="assets/img/gallery/emp-16.jpg"/>       
+		<div class="hover-img"> 
+		<h2>SSC Batch-2020</h2>
+		<i class="fa fa-camera camera"></i>
+		</div>	
+		</a>
+      </div>   
+	  <div class="element-item transition cms " data-category="post-transition">
+	   <a href="assets/img/gallery/emp-17.jpg">	 
+	    <img src="assets/img/gallery/emp-17.jpg"/>       
+		<div class="hover-img"> 
+		<h2>Book Fair</h2>
+		<i class="fa fa-camera camera"></i>
+		</div>	
+		</a>
+      </div>   
+      <div class="element-item transition cms " data-category="post-transition">
+        <a href="assets/img/gallery/emp-32.jpg">	 
+         <img src="assets/img/gallery/emp-32.jpg"/>       
+       <div class="hover-img"> 
+       <h2>Relay race -Annual Sports</h2>
+       <i class="fa fa-camera camera"></i>
+       </div>	
+       </a>
+         </div>   
+	  <div class="element-item transition cms " data-category="post-transition">
+	   <a href="assets/img/gallery/emp-18.jpg">	 
+	    <img src="assets/img/gallery/emp-18.jpg"/>       
+		<div class="hover-img"> 
+		<h2>Teachers -Annual Sports</h2>
+		<i class="fa fa-camera camera"></i>
+		</div>	
+		</a>
+      </div>
+      <div class="element-item transition cms " data-category="post-transition">
+        <a href="assets/img/gallery/emp-34.jpg">	 
+         <img src="assets/img/gallery/emp-34.jpg"/>       
+       <div class="hover-img"> 
+       <h2>Book Fair</h2>
+       <i class="fa fa-camera camera"></i>
+       </div>	
+       </a>
+         </div>   
+         <div class="element-item transition cms " data-category="post-transition">
+          <a href="assets/img/gallery/emp-35.jpg">	 
+           <img src="assets/img/gallery/emp-35.jpg"/>       
+         <div class="hover-img"> 
+         <h2>SSC Batch -DU, BUET</h2>
+         <i class="fa fa-camera camera"></i>
+         </div>	
+         </a>
+           </div>   
+	  <div class="element-item transition cms " data-category="post-transition">
+	   <a href="assets/img/gallery/emp-19.jpg">	 
+	    <img src="assets/img/gallery/emp-19.jpg"/>       
+		<div class="hover-img"> 
+		<h2>Class:5 - Science Museum</h2>
+		<i class="fa fa-camera camera"></i>
+		</div>	
+		</a>
+      </div>   
+      <div class="element-item transition cms " data-category="post-transition">
+        <a href="assets/img/gallery/emp-33.jpg">	 
+         <img src="assets/img/gallery/emp-33.jpg"/>       
+       <div class="hover-img"> 
+       <h2>Brikkho Mela</h2>
+       <i class="fa fa-camera camera"></i>
+       </div>	
+       </a>
+         </div>
+	  <div class="element-item transition cms " data-category="post-transition">
+	   <a href="assets/img/gallery/emp-20.jpg">	 
+	    <img src="assets/img/gallery/emp-20.jpg"/>       
+		<div class="hover-img"> 
+		<h2>Class:7 Boys -Annual Sports</h2>
+		<i class="fa fa-camera camera"></i>
+		</div>	
+		</a>
+      </div>
+      <div class="element-item transition cms " data-category="post-transition">
+        <a href="assets/img/gallery/emp-21.jpg">	 
+         <img src="assets/img/gallery/emp-21.jpg"/>       
+       <div class="hover-img"> 
+       <h2>Display -Annual Sports</h2>
+       <i class="fa fa-camera camera"></i>
+       </div>	
+       </a>
+         </div>
+      <div class="element-item transition cms " data-category="post-transition">
+        <a href="assets/img/gallery/emp-22.jpg">	 
+         <img src="assets/img/gallery/emp-22.jpg"/>       
+       <div class="hover-img"> 
+       <h2>Class:8 Girls -Annual Sports</h2>
+       <i class="fa fa-camera camera"></i>
+       </div>	
+       </a>
+         </div>
+         <div class="element-item transition cms " data-category="post-transition">
+          <a href="assets/img/gallery/emp-23.jpg">	 
+           <img src="assets/img/gallery/emp-23.jpg"/>       
+         <div class="hover-img"> 
+         <h2>Class:10 Girls -Annual Sports</h2>
+         <i class="fa fa-camera camera"></i>
+         </div>	
+         </a>
+           </div>
+           
+             <div class="element-item transition cms " data-category="post-transition">
+              <a href="assets/img/gallery/emp-28.jpg">	 
+               <img src="assets/img/gallery/emp-28.jpg"/>       
+             <div class="hover-img"> 
+             <h2>Music band -Annual Sports</h2>
+             <i class="fa fa-camera camera"></i>
+             </div>	
+             </a>
+               </div>
+
+                       
+  </div>
+
+ 
+</div>
+</section>
+
+    
+
+	
+    <!-- Footer -->
+    <footer id="footer" class="marg50">
+	<!-- =============== container =============== -->
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6">
+
+  <iframe width="100%" height="215" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3649.888422166536!2d90.3623222!3d23.8225664!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c13ab3be744b%3A0xca007a2fd5ba4406!2sCosmo+School+and+College%2C+Main+Campus!5e0!3m2!1sen!2sbd!4v1509426985862" style="border:0" allowfullscreen=""></iframe>
+
+            <p class="copyright p-2">
+                &copy; Copyright Cosmo School 2021. Developed by Cosmo School IT Club
+  </p>
+
+</div>
+<div data-wow-delay=".6s" class="col-xs-12 col-sm-6 col-md-6 wow bounceIn  animated" style="visibility: visible; animation-delay: 0.6s; animation-name: bounceIn;">
+
+    <section class="widget widget_text" id="text-15">
+                 <h3 class="widget-title">Dhaka-1216, Bangladesh</h3> <div class="textwidget">House-1, Road-1 Section-12, Block-B Pallabi, Mirpur.<br>
+                <p>Tel: +880 1973-900045,<br>
+                Mobile:+880 1842-900045<br>
+                E-mail: <a href="#">cosmoschool100@gmail.com</a></p>
+                <a target="blank" href="https://www.google.com/maps/place/Cosmo+School+and+College+(Main+Campus)/@23.822592,90.364673,15z/data=!4m5!3m4!1s0x0:0xca007a2fd5ba4406!8m2!3d23.8225915!4d90.3646726?hl=en-US">Get directions on the map</a> →</div>
+            </section>
+
+</div>
+</div>
+    </div><!-- =============== container end =============== -->
+	</footer>
+  <script src="assets/js/navbar.js"></script>
+    <!-- =============== jQuery =============== -->
+
+    <script src="assets/js/jquery.js"></script>
+    <!-- =============== Bootstrap Core JavaScript =============== -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- =============== Plugin JavaScript =============== -->
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/jquery.fittext.js"></script>
+    <script src="assets/js/wow.min.js"></script> 
+	<!-- =============== owl carousel =============== -->
+    <script src="assets/owl-carousel/owl.carousel.js"></script>  
+	<!-- Isotope does NOT require jQuery. But it does make things easier -->
+
+<script src="assets/js/baguetteBox.js" async></script>
+<script src="assets/js/plugins.js" async></script>
+
+    <!-- =============== Custom Theme JavaScript =============== -->
+    <script src="assets/js/creative.js">	</script> 
+<script src="assets/js/jquery.nicescroll.min.js"></script>
+
+<script>
+  $(document).ready(function() {
+  
+	var nice = $("html").niceScroll();  // The document page (body)
+	
+	$("#div1").html($("#div1").html()+' '+nice.version);
+    
+    $("#boxscroll").niceScroll({cursorborder:"",cursorcolor:"#00F",boxzoom:true}); // First scrollable DIV
+
+    $("#boxscroll2").niceScroll("#contentscroll2",{cursorcolor:"#F00",cursoropacitymax:0.7,boxzoom:true,touchbehavior:true});  // Second scrollable DIV
+    $("#boxframe").niceScroll("#boxscroll3",{cursorcolor:"#0F0",cursoropacitymax:0.7,boxzoom:true,touchbehavior:true});  // This is an IFrame (iPad compatible)
+	
+    $("#boxscroll4").niceScroll("#boxscroll4 .wrapper",{boxzoom:true});  // hw acceleration enabled when using wrapper
+    
+  });
+</script>
+<script>
+window.onload = function() {
+    if(typeof oldIE === 'undefined' && Object.keys)
+        hljs.initHighlighting();
+
+    baguetteBox.run('.baguetteBoxOne');
+    baguetteBox.run('.baguetteBoxTwo');
+    baguetteBox.run('.baguetteBoxThree', {
+        animation: 'fadeIn'
+    });
+    baguetteBox.run('.baguetteBoxFour', {
+        buttons: false
+    });
+    baguetteBox.run('.baguetteBoxFive', {
+        captions: function(element) {
+            return element.getElementsByTagName('img')[0].alt;
+        }
+    });
+};
+</script>
+</body>
+</html>
+
