@@ -43,6 +43,15 @@
         .details{
             background-color: #f4f5f8;
         }
+        .fg-theme{
+            cursor: pointer;
+        }
+        .fg-theme:hover{
+            color: #ff0000;
+            font-size: 28px;
+        }.details{
+            background-color: #f4f5f8;
+        }
         .admission-header{
       background: url("assets/img/IMG_2958.jpg") no-repeat fixed center bottom / cover;
     }
@@ -60,7 +69,7 @@
     <!-- =============== nav =============== -->
     <section id="navbar">
       <a href="https://www.cosmoschools.org"><img  style=" position: absolute; ; z-index: 2; " src="assets/img/cslogo.png" alt="" srcset=""></a>
-      <nav class="navigation ">
+ <nav class="navigation ">
          <ul>
          <li>
            <a href="#">
@@ -69,7 +78,7 @@
          </li>
          <li>
            <a href="#">
-           <span class="nav-title" onclick="window.open('offline-activities.html','_self')">Offline Activities</span>
+           <span class="nav-title" onclick="window.open('offline-activities.html','_self')">Online Activities</span>
            </a>
          </li>
           <li>
@@ -100,6 +109,11 @@
              <li class="sub-title hide3" onclick="window.open('exam.html','_self')">Public Exam Result</li>
            </span>
          </li>
+         <li>
+            <a href="#">
+           <span class="nav-title" onclick="window.open('teacher.html','_self')">Teacher's Corner</span>
+            </a>
+          </li>
          <li>
            <a href="#">
           <span class="nav-title" onclick="window.open('notice.html','_self')">Notice</span>
@@ -141,89 +155,115 @@
 
     <section id="about" class="">
 		<!-- =============== container =============== -->
-        <div class="container">           
-			 
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-6 wow fadeInLeft animated" data-wow-delay=".5s">
-                    <h2>Junior to Middle Section</h2>
-
-                        <ul class="timeline mt-4 pr-md-5">
-
-                            <li class="wow fadeInRight animated" data-wow-delay=".1s">
-                                <div class="details" style="background-color: #f4f5f8;border: 2px solid #333;                                ">
-                                  <small class="fg-theme">The new class routine will be uploaded shortly.</small>
-                                </div>
-                              </li>
-                              <li class="wow fadeInRight animated" data-wow-delay=".2s">
-                                <div class="details" style="background-color: #f4f5f8;border: 2px solid #333;  ">
-                                  <small class="fg-theme">The new class routine will be uploaded shortly.</small>
-                                </div>
-                              </li>
-                          <li class="wow fadeInRight animated" data-wow-delay=".3s">
-                            <div class="details" style="background-color: #f4f5f8;border: 2px solid #333;  ">
-                              <small class="fg-theme">The new class routine will be uploaded shortly.</small>
-                            </div>
-                          </li>
-                          <li class="wow fadeInRight animated" data-wow-delay=".4s">
-                            <div class="details" style="background-color: #f4f5f8;border: 2px solid #333;  ">
-                              <small class="fg-theme">The new class routine will be uploaded shortly.</small>
-                            </div>
-                          </li>
-                          <li class="wow fadeInRight animated" data-wow-delay=".5s">
-                            <div class="details" style="background-color: #f4f5f8;border: 2px solid #333;  ">
-                              <small class="fg-theme">The new class routine will be uploaded shortly.</small>
-                            </div>
-                          </li>
-
-                        </ul>
-                   
-                </div>
-
-			 <div class="col-xs-12 col-sm-12 col-md-6 wow fadeInRight animated" data-wow-delay=".6s">
-                <h2>Early-Senior to Senior Section</h2>
-
-                <ul class="timeline mt-4 pr-md-5">
-
-					<li class="wow fadeInRight animated" data-wow-delay=".7s">
-						<div class="details" style="background-color: #f4f5f8;border: 2px solid #333;  ">
-						  <small class="fg-theme">The new class routine will be uploaded shortly.</small>
-						</div>
-					  </li>
-					  <li class="wow fadeInRight animated" data-wow-delay=".8s">
-						<div class="details" style="background-color: #f4f5f8;border: 2px solid #333;  ">
-						  <small class="fg-theme">The new class routine will be uploaded shortly.</small>
-						</div>
-					  </li>
-				  <li class="wow fadeInRight animated" data-wow-delay=".9s">
-
-					<div class="details" style="background-color: #f4f5f8;border: 2px solid #333;  ">
-            <small class="fg-theme">The new class routine will be uploaded shortly.</small>
-					</div>
-				  </li>
-                  <li class="wow fadeInRight animated" data-wow-delay="1s">
-
-					<div class="details" style="background-color: #f4f5f8;border: 2px solid #333;  ">
-            <small class="fg-theme">The new class routine will be uploaded shortly.</small>
-					</div>
-				  </li>
-                  <li class="wow fadeInRight animated" data-wow-delay="1.1s">
-
-					<div class="details" style="background-color: #f4f5f8;border: 2px solid #333;  ">
-            <small class="fg-theme">The new class routine will be uploaded shortly.</small>
-					</div>
-				  </li>
-                  <li class="wow fadeInRight animated" data-wow-delay="1.2s">
-
-					<div class="details" style="background-color: #f4f5f8;border: 2px solid #333;  ">
-            <small class="fg-theme">The new class routine will be uploaded shortly.</small>
-					</div>
-				  </li>
-				</ul>            
-            </div>     
-
-                 
+        <div class="container">
+        
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 wow fadeInLeft animated" data-wow-delay=".5s">
+              <h2>Junior to Middle Section</h2>
+        
+              <ul class="timeline mt-4 pr-md-5">
+        
+                <li class="wow fadeInRight animated" data-wow-delay=".1s">
+                  <div class="details" style="border: 2px solid #333;">
+                    <small
+                      onclick="window.open('http://cosmoschools.org/media_library/activities_of_2022/class_routine/p-1.pdf')"
+                      class="fg-theme">Prep-I</small>
+                  </div>
+                </li>
+                <li class="wow fadeInRight animated" data-wow-delay=".2s">
+                  <div class="details" style="border: 2px solid #333;">
+                    <small
+                      onclick="window.open('http://cosmoschools.org/media_library/activities_of_2022/class_routine/p-2.pdf')"
+                      class="fg-theme">Prep-II</small>
+                  </div>
+                </li>
+                <li class="wow fadeInRight animated" data-wow-delay=".3s">
+                  <div class="details" style="border: 2px solid #333;">
+                    <small
+                      onclick="window.open('http://cosmoschools.org/media_library/activities_of_2022/class_routine/c-1.pdf')"
+                      class="fg-theme">Class-I</small>
+                  </div>
+                </li>
+                <li class="wow fadeInRight animated" data-wow-delay=".4s">
+                  <div class="details" style="border: 2px solid #333;">
+                    <small
+                      onclick="window.open('http://cosmoschools.org/media_library/activities_of_2022/class_routine/c-2.pdf')"
+                      class="fg-theme">Class-II</small>
+                  </div>
+                </li>
+                <li class="wow fadeInRight animated" data-wow-delay=".5s">
+                  <div class="details" style="border: 2px solid #333;">
+                    <small
+                      onclick="window.open('http://cosmoschools.org/media_library/activities_of_2022/class_routine/c-3.pdf')"
+                      class="fg-theme">Class-III</small>
+                  </div>
+                </li>
+                <li class="wow fadeInRight animated" data-wow-delay=".6s">
+                  <div class="details" style="border: 2px solid #333;">
+                    <small
+                      onclick="window.open('http://cosmoschools.org/media_library/activities_of_2022/class_routine/c-4.pdf')"
+                      class="fg-theme">Class-IV</small>
+                  </div>
+                </li>
+                <li class="wow fadeInRight animated" data-wow-delay=".7s">
+                  <div class="details" style="border: 2px solid #333;">
+                    <small
+                      onclick="window.open('http://cosmoschools.org/media_library/activities_of_2022/class_routine/c-5.pdf')"
+                      class="fg-theme">Class-V</small>
+                  </div>
+                </li>
+        
+              </ul>
+        
             </div>
-        </div>   
+        
+            <div class="col-xs-12 col-sm-12 col-md-6 wow fadeInRight animated" data-wow-delay=".8s">
+              <h2>Early-Senior to Senior Section</h2>
+        
+              <ul class="timeline mt-4 pr-md-5">
+        
+                <li class="wow fadeInRight animated" data-wow-delay=".9s">
+                  <div class="details" style="border: 2px solid #333;">
+                    <small onclick="window.open('http://cosmoschools.org/media_library/activities_of_2022/class_routine/c-6.pdf')"
+                      class="fg-theme">Class-VI</small>
+                  </div>
+                </li>
+                <li class="wow fadeInRight animated" data-wow-delay="1s">
+                  <div class="details" style="border: 2px solid #333;">
+                    <small onclick="window.open('http://cosmoschools.org/media_library/activities_of_2022/class_routine/c-7.pdf')"
+                      class="fg-theme">Class-VII</small>
+                  </div>
+                </li>
+                <li class="wow fadeInRight animated" data-wow-delay="1.1s">
+                  <div class="details" style="border: 2px solid #333;">
+                    <small onclick="window.open('http://cosmoschools.org/media_library/activities_of_2022/class_routine/c-8.pdf')"
+                      class="fg-theme">Class-VIII</small>
+                  </div>
+                </li>
+                <li class="wow fadeInRight animated" data-wow-delay="1.2s">
+                  <div class="details" style="border: 2px solid #333;">
+                    <small onclick="window.open('http://cosmoschools.org/media_library/activities_of_2022/class_routine/c-9.pdf')"
+                      class="fg-theme">Class-IX</small>
+                  </div>
+                </li>
+                <li class="wow fadeInRight animated" data-wow-delay="1.3s">
+                  <div class="details" style="border: 2px solid #333;">
+                    <small onclick="window.open('http://cosmoschools.org/media_library/activities_of_2022/class_routine/c-10.pdf')"
+                      class="fg-theme">Class-X</small>
+                  </div>
+                </li>
+                <li class="wow fadeInRight animated" data-wow-delay="1.4s">
+                  <div class="details" style="border: 2px solid #333;">
+                    <small onclick="window.open('http://cosmoschools.org/media_library/activities_of_2022/class_routine/SSC.pdf')"
+                      class="fg-theme">Class-X (Old)</small>
+                  </div>
+                </li>
+              </ul>
+            </div>
+        
+        
+          </div>
+        </div>
 		<!-- =============== container end =============== -->		
     </section>	
            

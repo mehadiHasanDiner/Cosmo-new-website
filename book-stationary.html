@@ -37,12 +37,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" >
 
     <style>
-        .details{
-            background-color: #f4f5f8;
-        }
+  
         .admission-header{
       background: url("assets/img/IMG_2961.jpg") no-repeat fixed center bottom / cover;
     }
+    li{
+      cursor: pointer;
+    }
+
     </style>
 
 </head>
@@ -57,7 +59,7 @@
     <!-- =============== nav =============== -->
     <section id="navbar">
       <a href="https://www.cosmoschools.org"><img  style=" position: absolute; ; z-index: 2; " src="assets/img/cslogo.png" alt="" srcset=""></a>
-      <nav class="navigation ">
+ <nav class="navigation ">
          <ul>
          <li>
            <a href="#">
@@ -66,7 +68,7 @@
          </li>
          <li>
            <a href="#">
-           <span class="nav-title" onclick="window.open('offline-activities.html','_self')">Offline Activities</span>
+           <span class="nav-title" onclick="window.open('offline-activities.html','_self')">Online Activities</span>
            </a>
          </li>
           <li>
@@ -97,6 +99,11 @@
              <li class="sub-title hide3" onclick="window.open('exam.html','_self')">Public Exam Result</li>
            </span>
          </li>
+         <li>
+            <a href="#">
+           <span class="nav-title" onclick="window.open('teacher.html','_self')">Teacher's Corner</span>
+            </a>
+          </li>
          <li>
            <a href="#">
           <span class="nav-title" onclick="window.open('notice.html','_self')">Notice</span>
@@ -145,19 +152,19 @@
 
                         <ul class="timeline mt-4 pr-md-5">
 
-                            <li class="wow fadeInRight animated" data-wow-delay=".1s">
-                                <div class="details" style="background-color: #f4f5f8;border: 2px solid #333;                                ">
-                                  <small onclick="window.open()" class="fg-theme">Prep-I </small>
+                            <li onclick="window.open('https://cosmoschools.org//media_library/book-stationary_list/Prep-1,%20stationaries%20list.pdf')" class="wow fadeInRight animated" data-wow-delay=".1s">
+                                <div class="details" style="border: 2px solid #333;                                ">
+                                  <small  class="fg-theme">Prep-I </small>
                                 </div>
                               </li>
-                              <li class="wow fadeInRight animated" data-wow-delay=".2s">
-                                <div class="details" style="background-color: #f4f5f8;border: 2px solid #333;  ">
-                                  <small onclick="window.open()"class="fg-theme">Prep-II </small>
+                              <li onclick="window.open('https://cosmoschools.org//media_library/book-stationary_list/Prep-2%20stationaries%20list.pdf')" class="wow fadeInRight animated" data-wow-delay=".2s">
+                                <div class="details" style="border: 2px solid #333;  ">
+                                  <small class="fg-theme">Prep-II </small>
                                 </div>
                               </li>
-                          <li class="wow fadeInRight animated" data-wow-delay=".3s">
-                            <div class="details" style="background-color: #f4f5f8;border: 2px solid #333;  ">
-                              <small onclick="window.open()" class="fg-theme">Class-I </small>
+                          <li onclick="window.open('https://cosmoschools.org//media_library/book-stationary_list/Class-1%20stationaries%20list.pdf')" class="wow fadeInRight animated" data-wow-delay=".3s">
+                            <div class="details" style="border: 2px solid #333;  ">
+                              <small  class="fg-theme">Class-I </small>
                             </div>
                           </li>
             
@@ -167,19 +174,19 @@
 
                         <ul class="timeline mt-4 pr-md-5">
 
-                            <li class="wow fadeInRight animated" data-wow-delay=".1s">
-                                <div class="details" style="background-color: #f4f5f8;border: 2px solid #333;                                ">
-                                  <small onclick="window.open()" class="fg-theme">Class-II </small>
+                            <li onclick="window.open('https://cosmoschools.org//media_library/book-stationary_list/Class%202%20copies%20list%202022.pdf')" class="wow fadeInRight animated" data-wow-delay=".1s">
+                                <div class="details" style="border: 2px solid #333;                                ">
+                                  <small  class="fg-theme">Class-II </small>
                                 </div>
                               </li>
-                              <li class="wow fadeInRight animated" data-wow-delay=".2s">
-                                <div class="details" style="background-color: #f4f5f8;border: 2px solid #333;  ">
-                                  <small onclick="window.open()" class="fg-theme">Class-III </small>
+                              <li onclick="window.open('https://cosmoschools.org//media_library/book-stationary_list/Class-3%20(Copy%20&%20Stationary)%20final.pdf')" class="wow fadeInRight animated" data-wow-delay=".2s">
+                                <div class="details" style="border: 2px solid #333;  ">
+                                  <small  class="fg-theme">Class-III </small>
                                 </div>
                               </li>
-                              <li class="wow fadeInRight animated" data-wow-delay=".2s">
-                                <div class="details" style="background-color: #f4f5f8;border: 2px solid #333;  ">
-                                  <small onclick="window.open()" class="fg-theme">Class-IV </small>
+                              <li onclick="window.open('https://cosmoschools.org//media_library/book-stationary_list/Class-4%20(Copy%20&%20Stationary)final.pdf')" class="wow fadeInRight animated" data-wow-delay=".2s">
+                                <div class="details" style="border: 2px solid #333;  ">
+                                  <small  class="fg-theme">Class-IV </small>
                                 </div>
                               </li>
             
@@ -192,21 +199,21 @@
 
                 <ul class="timeline mt-4 pr-md-5">
 
-					<li class="wow fadeInRight animated" data-wow-delay=".7s">
-						<div class="details" style="background-color: #f4f5f8;border: 2px solid #333;  ">
-						  <small onclick="window.open()" class="fg-theme">Class-V Early-Senior Section</small>
+					<li onclick="window.open('https://cosmoschools.org//media_library/book-stationary_list/Class-5%20(Copy%20&%20Stationary)final.pdf')" class="wow fadeInRight animated" data-wow-delay=".7s">
+						<div class="details" style="border: 2px solid #333;  ">
+						  <small  class="fg-theme">Class-V Early-Senior Section</small>
 						</div>
-					  </li>
-					  <li class="wow fadeInRight animated" data-wow-delay=".8s">
-						<div class="details" style="background-color: #f4f5f8;border: 2px solid #333;  ">
-						  <small onclick="window.open()" class="fg-theme">Class-VI Early-Senior Section</small>
+					</li>
+          <li onclick="window.open('https://cosmoschools.org//media_library/book-stationary_list/Class-6%20(Copy%20&%20Stationary)%20final.pdf')"class="wow fadeInRight animated" data-wow-delay=".8s">
+          <div class="details" style="border: 2px solid #333;  ">
+            <small  class="fg-theme">Class-VI Early-Senior Section</small>
+          </div>
+          </li>
+          <li onclick="window.open('https://cosmoschools.org//media_library/book-stationary_list/Class-7%20(Copy%20&%20Stationary)final.pdf')" class="wow fadeInRight animated" data-wow-delay=".8s">
+						<div class="details" style="border: 2px solid #333;  ">
+						  <small  class="fg-theme">Class-VII Early-Senior Section</small>
 						</div>
-					  </li>
-                      <li class="wow fadeInRight animated" data-wow-delay=".8s">
-						<div class="details" style="background-color: #f4f5f8;border: 2px solid #333;  ">
-						  <small onclick="window.open()" class="fg-theme">Class-VII Early-Senior Section</small>
-						</div>
-					  </li>
+					</li>
 				</ul>            
 
                 <h2>Senior Section</h2>
@@ -214,20 +221,16 @@
                 <ul class="timeline mt-4 pr-md-5">
 
 					<li class="wow fadeInRight animated" data-wow-delay=".7s">
-						<div class="details" style="background-color: #f4f5f8;border: 2px solid #333;  ">
-						  <small onclick="window.open()" class="fg-theme">Class-VII Senior Section</small>
+						<div class="details" style="border: 2px solid #333;  ">
+						  <small onclick="window.open()" class="fg-theme">Class-VIII Senior Section</small>
 						</div>
 					  </li>
-					  <li class="wow fadeInRight animated" data-wow-delay=".8s">
-						<div class="details" style="background-color: #f4f5f8;border: 2px solid #333;  ">
-						  <small onclick="window.open()" class="fg-theme">Class-IX Senior Section</small>
+					  <li onclick="window.open('https://cosmoschools.org//media_library/book-stationary_list/Class-9%20(Copy%20&%20Stationary)%20final.pdf')" class="wow fadeInRight animated" data-wow-delay=".8s">
+						<div class="details" style="border: 2px solid #333;  ">
+						  <small  class="fg-theme">Class-IX Senior Section</small>
 						</div>
 					  </li>
-                      <li class="wow fadeInRight animated" data-wow-delay=".8s">
-						<div class="details" style="background-color: #f4f5f8;border: 2px solid #333;  ">
-						  <small onclick="window.open()" class="fg-theme">Class-X Senior Section</small>
-						</div>
-					  </li>
+                   
 				</ul>            
             </div>     
 

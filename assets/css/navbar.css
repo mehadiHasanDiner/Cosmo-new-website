@@ -16,7 +16,7 @@
    width: 300px;
   }
   .navigation ul{
-  padding: 100px 0 0 0 ;
+  padding: 50px 0 0 0 ;
   position: absolute;
   left: 0;
   top: 0;
@@ -30,24 +30,6 @@
   .navigation ul li:hover{
   background: red;
   }
-  /* .navigation ul li a{
-  position: relative;
-  display: block;
-  display: flex;
-  width: 100%;
-  text-decoration: none;
-  } */
-  /* .navigation ul li a .icon{
-  position: relative;
-  display: block;
-  min-height: 60px;
-  line-height: 60px;
-  height: 60px;
-  text-align: center;
-  } */
-  /* .navigation ul li .icon .fas{
-  font-size: 20px;
-  } */
   .nav-title{
   position: relative;
   display: block;
@@ -72,7 +54,7 @@
   padding: 0 50px;
   line-height: 35px;
   position: relative;
-  color: rgb(255, 255, 255);
+  color: rgb(255, 255, 35);
   text-decoration: none;
   letter-spacing: 2px;
   white-space:nowrap;
