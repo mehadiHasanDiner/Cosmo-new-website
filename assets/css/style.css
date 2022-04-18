@@ -8,13 +8,7 @@ body {
     font-size:14px;
 }
 
-.closeButton{
-    width: 20%;
-    padding: 5px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    font-size: 20px;
-}
+
 a {
     transition: all 0.35s ease 0s;
     -webkit-transition: all 0.35s ease 0s;
