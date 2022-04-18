@@ -127,6 +127,25 @@
 		 <div class="menu" onclick="toggleMenu()">Menu</div>
 	  </section>
 	  <!-- header ends -->
+
+	  
+	<!-- Pop-up massage after loading -->
+	<div class="popUpMain" style="display: none;">
+		<div class="popUp">
+			<h1 class="noticeHeading"> Notice </h1>
+			<br>
+			<p> <strong>Dear Parents (III-IX, Girls),</strong>
+				<br>Assalamu-alaikum,<br>From 19th April Tuesday, our regular classes will start. Class timing during Ramadan: 7:55 am-11:35 am. During the class time, students have to bring diary, subjective books and separate C.W. & H.W. copies. <br>Thanks, <br>Cosmo School
+			</p>
+			<hr>
+			<p> <strong>Dear Parents (III-IX, Boys),</strong>
+				<br>Assalamu-alaikum,<br> From 19th April Tuesday, our regular classes will start. Class timing during Ramadan: 12:15 pm-03:55 pm. During the class time, students have to bring diary, subjective books and separate C.W. & H.W. copies. <br>Thanks, <br>Cosmo School
+			</p>
+			<button class="closeButton">Close</button>
+		</div>
+	</div>
+
+
     <!-- =============== header =============== -->
     <header id="home" class="header">
 		<!-- =============== container =============== -->
@@ -756,6 +775,7 @@
 				</div>
 			</div>
     </div><!-- =============== container end =============== -->
+
 	</footer>    
 	<div class="sliding_text_wrap">
 
@@ -822,6 +842,8 @@
 	  
 	});
   </script>
+
+
 <script>
 window.onload = function() {
     if(typeof oldIE === 'undefined' && Object.keys)
@@ -841,7 +863,23 @@ window.onload = function() {
         }
     });
 };
+
+//    pop-up notice  script
+	const popUpMain = document.querySelector('.popUpMain');
+	const closeButton = document.querySelector('.closeButton');
+
+	window.onload = function(){
+		setTimeout(function(){
+			popUpMain.style.display = "block"
+		}, 1000)
+	}
+
+	closeButton.addEventListener('click', () => {
+			popUpMain.style.display = "none"
+	})
 </script>
+
+
 </body>
 </html>
 
