@@ -5,10 +5,18 @@ const trusteeMembersData = () => {
 };
 
 const setTrusteeMembersData = (data) => {
-  data.forEach((element) => {
+  const trusteeContainer = document.getElementById("trustee-container");
+  data.slice(0, 29).forEach((element) => {
     const memberDiv = document.createElement("div");
-    memberDiv.classList.add("col-3", "col-md-3", "col-sm-2");
-    console.log(memberDiv);
+    memberDiv.classList.add("col-6", "col-md-3", "col-xs-6");
+    memberDiv.innerHTML = `
+    <div>
+    <img style="margin-bottom: 20px;" src="${element.image}" class="img-thumbnail img-fluid"
+						alt="">
+    
+    `;
+    trusteeContainer.appendChild(memberDiv);
   });
 };
+
 trusteeMembersData();
