@@ -11,12 +11,24 @@ const setTrusteeMembersData = (data) => {
     memberDiv.classList.add("col-6", "col-md-3", "col-xs-6");
     memberDiv.innerHTML = `
     <div>
-    <img style="margin-bottom: 20px;" src="${element.image}" class="img-thumbnail img-fluid"
+    <img onclick = "openPhotoDetails('${element.image}', '${element.name_english}', '${element.category}')" style="margin-bottom: 20px;" src="${element.image}" class="img-thumbnail img-fluid"
 						alt="">
     
     `;
     trusteeContainer.appendChild(memberDiv);
   });
+};
+
+const openPhotoDetails = (photo, name, category) => {
+  const photoContainer = document.getElementById("photo-container");
+  photoContainer.innerHTML = "";
+  // console.log("Photo Details", photo, name, category);
+  photoContainer.innerHTML += `
+    <img  src="${photo}" alt="">
+    <h2>Name: ${name}</h2>
+    <h3>Designation: ${category}</h3>
+  
+  `;
 };
 
 trusteeMembersData();
