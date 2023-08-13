@@ -1433,3 +1433,14 @@ width:100%;
 /* .sliding_text_wrap a:hover{
     color: #94d2bd;
 } */
+
+
+/* trustee member */
+.member-div{
+    text-align: center;
+}
+
+.member-style{
+    background-color: blanchedalmond;
+    padding: 10px;
+}
