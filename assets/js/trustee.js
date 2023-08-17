@@ -1,6 +1,6 @@
 let memberData = [];
 const trusteeMembersData = () => {
-  fetch("js/trustee.json")
+  fetch("assets/js/trustee.json")
     .then((res) => res.json())
     .then((data) => {
       setTrusteeMembersData(data.trusteeData);
