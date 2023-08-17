@@ -1444,3 +1444,14 @@ width:100%;
     background-color: blanchedalmond;
     padding: 10px;
 }
+
+.remembered{
+    background-color: #d5ecb4;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: medium;
+        border-style: groove;
+        border-color: #00ff56;
+        font-style: italic;
+        line-height: 30px;
+}

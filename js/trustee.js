@@ -15,7 +15,6 @@ const setTrusteeMembersData = (data) => {
     const memberDiv = document.createElement("div");
     memberDiv.classList.add("col-6", "col-md-3", "col-xs-6");
     memberDiv.innerHTML = `
-    <div>
     <img onclick = "openPhotoDetails('${element.image}', '${element.name_english}', '${element.category}')" style="margin-bottom: 20px;" src="${element.image}" class="img-thumbnail img-fluid"
 						alt="">
     `;

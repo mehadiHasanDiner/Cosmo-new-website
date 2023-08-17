@@ -48,7 +48,7 @@
 
 	<style>
 		.admission-header {
-			background: url("assets/img/_MG_8931.jpg") no-repeat fixed center bottom / cover;
+			background: url("assets/img/team-bg.jpg") no-repeat fixed center bottom / cover;
 		}
 	</style>
 </head>
@@ -157,7 +157,9 @@
 		<div class="container">
 			<div class="header-content row">
 				<h1>Cosmo Trust</h1>
-				<h3>All Trustee Members List</h3>
+				<h3>Trustee members who are no longer living
+
+				</h3>
 
 			</div>
 		</div>
@@ -217,9 +219,48 @@
 			</div><!-- =============== container end =============== -->
 		</footer>
 
+		<!-- getting filtered member list from trustee.html -->
 		<script>
+			const queryString = window.location.search;
+			const urlParams = new URLSearchParams(queryString);
+			const encodedData = urlParams.get("data");
+			const filteredData = JSON.parse(decodeURIComponent(encodedData));
+			console.log(filteredData);
+
+			// setting filtered member list
+			const trusteeContainer = document.getElementById("trustee-container");
+			filteredData.forEach((element) => {
+				const memberDiv = document.createElement("div");
+				memberDiv.classList.add("col-6", "col-md-3", "col-xs-6");
+				memberDiv.innerHTML = `
+					<img onclick = "openPhotoDetails('${element.image}', '${element.name_english}', '${element.category}', '${element.details}')" style="margin-bottom: 20px;" src="${element.image}" class="img-thumbnail img-fluid"
+										alt="">
+    			`;
+				trusteeContainer.appendChild(memberDiv);
+			});
+
+
+			const memberContainer = document.getElementById("member-container");
+			memberContainer.style.display = "none";
+
+			const openPhotoDetails = (photo, name, category, details) => {
+				const photoContainer = document.getElementById("photo-container");
+				photoContainer.innerHTML = "";
+				// console.log("Photo Details", photo, name, category);
+				photoContainer.innerHTML += `
+					<img class="img-fluid" style="max-width: 100%; height: auto;"  src="${photo}" alt="">
+					<h3>Name: ${name}</h3>
+					
+					<p class="remembered">${details}</p>
+				
+				`;
+				memberContainer.style.display = "block";
+				memberContainer.scrollIntoView();
+			};
 
 		</script>
+
+
 
 		<!-- <script src="js/trustee.js"></script> -->
 		<script src="assets/js/navbar.js"></script>
