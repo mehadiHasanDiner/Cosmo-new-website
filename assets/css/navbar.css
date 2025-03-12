@@ -1,40 +1,40 @@
-.navigation{
-    position: fixed;
-    z-index: 2;
-    top: 0px;
-    right: 0px;
-    min-height: 100vh;
-    width: 0px;
-    transition: 0.6s;
-    background-image: linear-gradient(to right, #64ce60 , #60b99b );
-    overflow: hidden;
-    font-family: 'Bebas Neue', cursive;
-
-  }
-  .navigation:hover,
-  .navigation.active {
-   width: 300px;
-  }
-  .navigation ul{
-  padding: 50px 0 0 0 ;
+.navigation {
+  position: fixed;
+  z-index: 2;
+  top: 0px;
+  right: 0px;
+  min-height: 100vh;
+  width: 0px;
+  transition: 0.6s;
+  background-image: linear-gradient(to right, #005804, #00a16c);
+  overflow: hidden;
+  font-family: "Bebas Neue", cursive;
+}
+.navigation:hover,
+.navigation.active {
+  width: 300px;
+}
+.navigation ul {
+  padding: 50px 0 0 0;
   position: absolute;
   left: 0;
   top: 0;
-  width:100%;
-  }
-  .navigation ul li{
+  width: 100%;
+}
+.navigation ul li {
   position: relative;
   width: 100%;
   list-style: none;
-  }
-  .navigation ul li:hover{
+}
+.navigation ul li:hover {
   background: red;
-  }
-  .nav-title{
+}
+.nav-title {
   position: relative;
   display: block;
   color: rgb(255, 255, 30);
-  padding:0 40px;
+  /* color: black; */
+  padding: 0 40px;
   line-height: 58px;
   font-weight: 400;
   letter-spacing: 2px;
@@ -43,35 +43,38 @@
   cursor: pointer;
   text-align: start;
   white-space: nowrap;
-  }
-#navbar img{
+}
+#navbar img {
   z-index: 2;
   transform: scale(1.2);
   left: 69px;
-  display: inline; position: absolute; padding: 15px; 
+  display: inline;
+  position: absolute;
+  padding: 15px;
 }
-  .sub-title{
+.sub-title {
   padding: 0 50px;
   line-height: 35px;
   position: relative;
-  color: rgb(255, 255, 35);
+  /* color: rgb(255, 255, 35); */
+  color: white;
   text-decoration: none;
   letter-spacing: 2px;
-  white-space:nowrap;
+  white-space: nowrap;
   list-style: none;
   display: none;
-  cursor:pointer ;
-  }
-  a:hover{
-    text-decoration: none;
-  }
-  .menu{
-    position: fixed;
-    display: none;
+  cursor: pointer;
+}
+a:hover {
+  text-decoration: none;
+}
+.menu {
+  position: fixed;
+  display: none;
   z-index: 3;
   top: 0;
   right: 36px;
-    background: #bb3e03;
+  background: #bb3e03;
   cursor: pointer;
   color: yellow;
   width: 78px;
@@ -79,8 +82,8 @@
   font-size: 25px;
   line-height: 60px;
   padding-left: 15px;
-  }
-  .toggle{
+}
+.toggle {
   position: fixed;
   z-index: 3;
   top: 0;
@@ -94,11 +97,11 @@
   align-items: center;
   line-height: 60px;
   font-size: 30px;
-  }
-  /* .toggle.active {
+}
+/* .toggle.active {
   background: ;
   } */
-  .toggle:before{
+.toggle:before {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -106,33 +109,32 @@
   text-align: center;
   color: white;
   font-size: 24px;
-  }
-  .fas{
+}
+.fas {
   transition: 0.6s;
-  }
-  @media (max-width: 767px){
+}
+@media (max-width: 767px) {
   .navigation {
-  color: #6D719F;
+    color: #6d719f;
   }
-  .navigation.active{
-  left: 0;
-  width: 100%;
+  .navigation.active {
+    left: 0;
+    width: 100%;
   }
-  }
-  @media (max-width:480px)
-{
-  #navbar img{
+}
+@media (max-width: 480px) {
+  #navbar img {
     transform: scale(0.45);
     left: -130px;
     top: -10px;
-padding: 0;
+    padding: 0;
   }
-    /* .menu{
+  /* .menu{
       transform: scale(0.9);
       top: -10px;
       right: 25px;
     }   */
-    /* .toggle{
+  /* .toggle{
 
       transform: scale(0.9);
       top: -10px;
