@@ -74,90 +74,121 @@
     </div>
   </div>
   <!-- =============== nav =============== -->
-  <!-- header stsrts -->
-  <section id="navbar">
-    <a href="https://www.cosmoschools.org"><img style=" position: absolute; ; z-index: 2; " src="assets/img/cslogo.png"
-        alt="" srcset=""></a>
-    <nav class="navigation ">
-      <ul>
-        <li>
-          <a href="#">
-            <span class="nav-title" onclick="window.open('index.html','_self')">Home</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span class="nav-title" onclick="window.open('offline-activities.html','_self')"> Daily Class Topics</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span class="nav-title" onclick="window.open('class-activities.html','_self')">
-              Class Activities</span>
-          </a>
-        </li>
-        <li>
-          <span class="nav-title" onclick="show1()">Admission &nbsp <i class="fas fa-angle-right rotate1"></i></span>
-          <span class="sub-menu">
-        <li class="sub-title hide1" onclick="window.open('admission-form.html','_self')">Form</li>
-        <li class="sub-title hide1" onclick="window.open('escort-card.html','_self')">Escort Card</li>
-        <li class="sub-title hide1" onclick="window.open('brochure.html','_self')">Brochure</li>
-        </span>
-        </li>
-        <li>
-          <span class="nav-title" onclick="show2()">About &nbsp <i class="fas fa-angle-right rotate2"></i></span>
-          <span class="sub-menu">
-        <li class="sub-title hide2" onclick="window.open('index.html#about','_self')">About Us</li>
-        <li class="sub-title hide2" onclick="window.open('mission-vision.html','_self')">Mission and Vision</li>
-        <li class="sub-title hide2" onclick="window.open('student-prottoyon.html','_self')">Student Prottoyon</li>
-        <li class="sub-title hide2" onclick="window.open('student-guideline.html','_self')">Student Guideline</li>
-        </span>
-        </li>
-        <li>
-          <span class="nav-title" onclick="show3()">Academic &nbsp <i class="fas fa-angle-right rotate3"></i> </span>
-          <span class="sub-menu">
-        <li class="sub-title hide3" onclick="window.open('calendar.html','_self')">Calendar</li>
-        <li class="sub-title hide3" onclick="window.open('class-routine.html','_self')">Class Routine</li>
-        <li class="sub-title hide3" onclick="window.open('exam-routine.html','_self')">Exam Routine</li>
-        <li class="sub-title hide3" onclick="window.open('syllabus.html','_self')">Syllabus (All Classes)</li>
-        <li class="sub-title hide3" onclick="window.open('book-stationary.html','_self')">Book-Stationary List</li>
-        <li class="sub-title hide3" onclick="window.open('exam.html','_self')">Public Exam Result</li>
-        </span>
-        </li>
-        <li>
-          <a href="#">
-            <span class="nav-title" onclick="window.open('teacher.html','_self')">Teacher's Corner</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span class="nav-title" onclick="window.open('notice.html','_self')">Notice</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span class="nav-title" onclick="window.open('gallery.html','_self')">Gallery</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span class="nav-title" onclick="window.open('career.html','_self')">Career Corner</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span class="nav-title" onclick="window.open('index.html#contact','_self')">Contact us</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <div class="toggle" onclick="toggleMenu()">
-      <b class="change"><i class="fas fa-bars"></i></b>
-    </div>
-    <div class="menu" onclick="toggleMenu()">Menu</div>
-  </section>
-  <!-- header ends -->
+<!-- header starts -->
+<section id="navbar">
+  <a href="https://www.cosmoschools.org"><img style=" position: absolute; ; z-index: 2; " src="assets/img/cslogo.png"
+      alt="" srcset=""></a>
+  <nav class="navigation ">
+    <ul>
+      <li>
+        <a href="#">
+          <span class="nav-title" onclick="window.open('index.html','_self')">Home</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="nav-title" onclick="window.open('offline-activities.html','_self')">Daily Class
+            Topics</span>
+        </a>
+      </li>
+      <!-- <li>
+					<a href="#">
+						<span class="nav-title" onclick="window.open('class-activities.html','_self')">
+							Class Activities</span>
+					</a>
+				</li> -->
 
+      <li>
+        <span class="nav-title" onclick="show1()">Class-wise Activities &nbsp <i
+            class="fas fa-angle-right rotate1"></i></span>
+        <span class="sub-menu">
+      <li class="sub-title hide1" onclick="window.open('class_activity_junior.html','_self')">Prep-I to
+        Class-II
+        (Junior)</li>
+      <li class="sub-title hide1" onclick="window.open('class_activity_middle.html','_self')">Class-III to
+        Class-V
+        (Middle)</li>
+      <li class="sub-title hide1" onclick="window.open('class_activity_senior.html','_self')">Class-VI to
+        Class-X
+        (Senior)</li>
+      </span>
+      </li>
+
+      <li>
+
+      <li>
+        <span class="nav-title" onclick="show2()">Admission &nbsp <i class="fas fa-angle-right rotate2"></i></span>
+        <span class="sub-menu">
+      <li class="sub-title hide2" onclick="window.open('admission-form.html','_self')">Form</li>
+      <li class="sub-title hide2" onclick="window.open('escort-card.html','_self')">Escort Card</li>
+      <li class="sub-title hide2" onclick="window.open('brochure.html','_self')">Brochure</li>
+      </span>
+      </li>
+      <li>
+        <span class="nav-title" onclick="show3()">About &nbsp <i class="fas fa-angle-right rotate3"></i></span>
+        <span class="sub-menu">
+      <li class="sub-title hide3" onclick="window.open('index.html#about','_self')">About Us</li>
+      <li class="sub-title hide3" onclick="window.open('principal_message.html','_self')">Principal’s Message
+      </li>
+      <li class="sub-title hide3" onclick="window.open('mission-vision.html','_self')">Mission and Vision</li>
+      <li class="sub-title hide3" onclick="window.open('student-prottoyon.html','_self')">Student Prottoyon
+      </li>
+      <li class="sub-title hide3" onclick="window.open('student-guideline.html','_self')">Student Guideline
+      </li>
+      </span>
+      </li>
+
+      <li>
+        <span class="nav-title" onclick="show4()">Academic &nbsp <i class="fas fa-angle-right rotate4"></i>
+        </span>
+        <span class="sub-menu">
+      <li class="sub-title hide4" onclick="window.open('calendar.html','_self')">Calendar</li>
+      <li class="sub-title hide4" onclick="window.open('class-routine.html','_self')">Class Routine</li>
+      <li class="sub-title hide4" onclick="window.open('exam-routine.html','_self')">Exam Routine</li>
+      <li class="sub-title hide4" onclick="window.open('syllabus.html','_self')">Syllabus (All Classes)</li>
+      <li class="sub-title hide4" onclick="window.open('book-stationary.html','_self')">Book-Stationary List
+      </li>
+      <li class="sub-title hide4" onclick="window.open('exam.html','_self')">Public Exam Result</li>
+      </span>
+
+      </li>
+
+      <li>
+        <a href="#">
+          <span class="nav-title" onclick="window.open('teacher.html','_self')">Teacher's Corner</span>
+        </a>
+      </li>
+
+      <!-- <li>
+					<a href="#">
+						<span class="nav-title" onclick="window.open('notice.html','_self')">Notice</span>
+					</a>
+				</li> -->
+
+      <li>
+        <a href="#">
+          <span class="nav-title" onclick="window.open('gallery.html','_self')">Gallery</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="nav-title" onclick="window.open('career.html','_self')">Career Corner</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="nav-title" onclick="window.open('index.html#contact','_self')">Contact us</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div class="toggle" onclick="toggleMenu()">
+    <b class="change"><i class="fas fa-bars"></i></b>
+  </div>
+  <div class="menu" onclick="toggleMenu()">Menu</div>
+</section>
+<!-- header ends -->
+ 
   <header id="home" class="admission-header" style="
     margin-bottom: 0px;
 ">
